@@ -1,0 +1,104 @@
+Delivered-To: ella.bulala@gmail.com
+Received: by 2002:a25:19d5:0:0:0:0:0 with SMTP id 204csp61983ybz;
+        Tue, 5 Jan 2021 07:23:29 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJzVbEubq0Tdb8DN9rxlY/lWMDti4b/iX38G38zyaKMF/1mj0qOTCut0kKHTMn8nsZkE1UOr
+X-Received: by 2002:a17:902:74cc:b029:da:9287:2b4 with SMTP id f12-20020a17090274ccb02900da928702b4mr78578791plt.9.1609860209414;
+        Tue, 05 Jan 2021 07:23:29 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1609860209; cv=none;
+        d=google.com; s=arc-20160816;
+        b=09wZY/YYZJkHzWRMeoqZXtxrfo+qsaaCYuiNbIu26t9OrxYbby01AD27vOdqm2w/t4
+         dQu1PqwRg0OCRXnXX0RkxZK0+kaYYeN929naH3SetSEhSAs/1qw4BUOEwwSrzyrGl/W3
+         7uwmxnX8xjUlhStcFdijwhjxH28aG0/fevHXQzBL8XSqCrqteWK2spS/NYG30QEVbQEz
+         UkoQh6UYdBSXwZ+ncKElO91CC/wvTA0WA0peItVC0Z8la+2cmJX+cuHkxZcSJU0afd3B
+         oEECz5Yfik/Sh8GlJeocQAVE3IYuG1IH5kdH57cDfoi9Cqszv1J8R1a5z+J4J9pN01QZ
+         0w7Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:list-unsubscribe-post:list-unsubscribe:list-id
+         :feedback-id:message-id:date:to:reply-to:from:subject:dkim-signature
+         :dkim-signature;
+        bh=P1bWg+GcFw1DY+ANR5PuDR7OTTSnw2arBxJ+uGDdW2k=;
+        b=xoVEEeHgX8Q6szQiXo7rjmWVDXjtrZ1tJAm7liym3joSxmzV3BYNA/Pr8619P3RTj/
+         M2CHg/eysk8zpqPeYAesckon3RZHfvaTqOhUc37/m9Vm43ZrxGN1RzWlxPw4Y4HSgnpb
+         HmAAQNhKpWQuXyKgjmN6Ze1H5Dn1iTMpLbEGj/N/93haZpK/YhiVi4rfh1cJHAUMFPfW
+         72oTvmc1p8EIbJyk+5c8ktgnWO7IkJAwF/nDN4H3o3MBgsskKbm4fFBQfPhZzHb0VImT
+         ZUCcpSSmxHoYNoLPoRNm55U1+KXam52z2RNgA0l8VsFD+SQAEyXBiqs+4k2lSupq9L6F
+         dSww==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.mcsv.net header.s=k1 header.b="SCFkC/qt";
+       dkim=pass header.i=@awario.com header.s=k1 header.b="eAJQ/MWS";
+       spf=pass (google.com: domain of bounce-mc.us13_56356813.178274-71a3a0e85a@mail105.sea91.rsgsv.net designates 148.105.15.105 as permitted sender) smtp.mailfrom=bounce-mc.us13_56356813.178274-71a3a0e85a@mail105.sea91.rsgsv.net
+Return-Path: <bounce-mc.us13_56356813.178274-71a3a0e85a@mail105.sea91.rsgsv.net>
+Received: from mail105.sea91.rsgsv.net (mail105.sea91.rsgsv.net. [148.105.15.105])
+        by mx.google.com with ESMTPS id c17si68958plo.393.2021.01.05.07.23.29
+        for <ella.bulala@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 05 Jan 2021 07:23:29 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounce-mc.us13_56356813.178274-71a3a0e85a@mail105.sea91.rsgsv.net designates 148.105.15.105 as permitted sender) client-ip=148.105.15.105;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.mcsv.net header.s=k1 header.b="SCFkC/qt";
+       dkim=pass header.i=@awario.com header.s=k1 header.b="eAJQ/MWS";
+       spf=pass (google.com: domain of bounce-mc.us13_56356813.178274-71a3a0e85a@mail105.sea91.rsgsv.net designates 148.105.15.105 as permitted sender) smtp.mailfrom=bounce-mc.us13_56356813.178274-71a3a0e85a@mail105.sea91.rsgsv.net
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.mcsv.net;
+	s=k1; t=1609860041; bh=P1bWg+GcFw1DY+ANR5PuDR7OTTSnw2arBxJ+uGDdW2k=;
+	h=Subject:From:Reply-To:To:Date:Message-ID:Feedback-ID:List-ID:
+	 List-Unsubscribe:Content-Type:MIME-Version;
+	b=SCFkC/qtwVpY9FEFYX6eVITfp9768TTiMz1fST3LQDN6fAuYZXhOC97muxDnmR75A
+	 PlNQrODPrbMcpkZ1bbJkFYEghSxW0ItZYWfIJkLEBTOSa25Ry5nFTwXRF84NWvMX9J
+	 ef7ZQVs2EGaO8lRWtdlrGCdJ9cnl3ZjqqjPXZe48=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=awario.com; s=k1;
+	t=1609860041; i=support@awario.com;
+	bh=P1bWg+GcFw1DY+ANR5PuDR7OTTSnw2arBxJ+uGDdW2k=;
+	h=Subject:From:Reply-To:To:Date:Message-ID:List-ID:List-Unsubscribe:
+	 Content-Type:MIME-Version;
+	b=eAJQ/MWSp35JvgxqBRXbRkonsVop6+Q6ip1VCKJkWnxBqIl4C88LeRhM0USNOO1gL
+	 FpfHHvpqM9G4vuwRyrSGdIhusgzVJULp+GM2s3NndZ3zrEh90g3BxzJtye3OkhsHmo
+	 1iSpwNfrEIIzir77/yeFhRq4dqcOTeJaSGsHwhi0=
+Received: from localhost (localhost [127.0.0.1])
+	by mail105.sea91.rsgsv.net (Mailchimp) with ESMTP id 4D9GQx327qzS67cJF
+	for <ella.bulala@gmail.com>; Tue,  5 Jan 2021 15:20:41 +0000 (GMT)
+Subject: =?utf-8?Q?Get=20ready=20for=202021=3A=20Digital=20marketing=20trends?=
+From: =?utf-8?Q?Anna=20from=20Awario?= <support@awario.com>
+Reply-To: =?utf-8?Q?Anna=20from=20Awario?= <support@awario.com>
+To: <ella.bulala@gmail.com>
+Date: Tue,  5 Jan 2021 15:20:40 +0000
+Message-ID: <705b264d89362db07093bf4d0.71a3a0e85a.20210105152030.b08ee8128f.aefad520@mail105.sea91.rsgsv.net>
+X-Mailer: MailChimp Mailer - **CIDb08ee8128f71a3a0e85a**
+X-Campaign: mailchimp705b264d89362db07093bf4d0.b08ee8128f
+X-campaignid: mailchimp705b264d89362db07093bf4d0.b08ee8128f
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=705b264d89362db07093bf4d0&id=b08ee8128f&e=71a3a0e85a
+X-MC-User: 705b264d89362db07093bf4d0
+Feedback-ID: 56356813:56356813.178274:us13:mc
+List-ID: 705b264d89362db07093bf4d0mc list <705b264d89362db07093bf4d0.135877.list-id.mcsv.net>
+X-Accounttype: pr
+List-Unsubscribe: <https://awario.us13.list-manage.com/unsubscribe?u=705b264d89362db07093bf4d0&id=7c643bf689&e=71a3a0e85a&c=b08ee8128f>, <mailto:unsubscribe-mc.us13_705b264d89362db07093bf4d0.b08ee8128f-71a3a0e85a@mailin.mcsv.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_293894324"
+MIME-Version: 1.0
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_293894324
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+Happy new social media trends!
+
+Now that 2020 is finally over=2C let's quickly move on to 2021 and look at=
+ what it has in store for us. Of course=2C I don't mean globally. We're he=
+re to talk about digital marketing trends and nothing else.
+
+Ready to prepare your marketing strategy for the new era?
+
+https://awario.com/blog/digital-marketing-trends-2021/
+
+Cheers=2C
+Anna from Awario
+=C2=A9 2020 awario.com
+You are receiving this email because you subscribed to Awario news.
+You can unsubscribe (https://awario.us13.list-manage.com/unsubscribe?u=3D7=
+05b264d89362db07093bf4d0&id=3D7c643bf689&e=3D71a3a0e85a&c=3Db08ee8128f) at a=
+ny time.
+--_----------=_MCPart_293894324
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
